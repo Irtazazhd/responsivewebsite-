@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery</title>
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="frontend/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="frontend/images/logo.png" alt=""></a>
+            <h1 class="logoName">Sweet Delights Bakery</h1>
+        </div>
+    
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#blogs">blogs</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+    
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+    
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    
+        <div>
+            <button class="signup-btn">Sign Up</button>
+            <button class="login-btn">Login</button>
+        </div>
+    </header>
+    
+    <!-- Modal for Sign Up -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close" id="close-signup">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" placeholder="Full Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Modal for Login -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>    
+    </header>    
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Delicious Cake for Everyone </h2>
+            <p>At Sweet Delights Bakery, we believe that every occasion deserves a special treat, and we’re here to make those moments even sweeter. Our bakery is dedicated to crafting delicious, handmade cakes, cupcakes, cookies, and more using only the finest ingredients. Whether you’re celebrating a birthday, wedding, or simply indulging in a sweet craving, we have the perfect dessert to brighten your day.</p>
+            <div class="home-btn">
+                <a href="#"><button>see more</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Chocolate Lava Cake is a warm, indulgent dessert with a molten chocolate center. Each bite combines rich cake and flowing chocolate, making it an irresistible treat for chocolate lovers.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate Spartak Cake</h3>
+                        <p>Chocolate Spartak Cake is a layered dessert with rich, moist chocolate cakes and a creamy, smooth filling. Its perfect blend of chocolate and sweetness makes each bite irresistible.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake3.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tiramisu Mascarpone Cake</h3>
+                        <p>Tiramisu Mascarpone Cake combines soft, fluffy layers with a rich mascarpone filling. Infused with coffee and cocoa, it offers a perfect balance of creamy sweetness and espresso flavor.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake8.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Dubble Chocolate Cake</h3>
+                        <p>Double Chocolate Cake features rich, moist layers of chocolate cake paired with a creamy, velvety chocolate frosting. Its deep, indulgent flavor and smooth texture create the ultimate chocolate lover's treat.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake4.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Lemon Raspberry</h3>
+                        <p>Lemon Raspberry Cake combines zesty lemon cake layers with a sweet, tangy raspberry filling. The bright, citrus flavor and fresh berry sweetness create a refreshing and delightful dessert.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake5.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Oreo Cream Cake</h3>
+                        <p>Oreo Cream Cake features layers of soft, moist cake filled with a rich, creamy Oreo frosting. Its combination of chocolate and vanilla flavors, along with crunchy cookie pieces.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake6.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla Cake</h3>
+                        <p>Vanilla Cake offers light, fluffy layers with a smooth, sweet vanilla flavor. Its soft texture and subtle taste make it a versatile dessert, perfect for pairing with various frostings or enjoying on its own.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/cake7.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Black Forest</h3>
+                        <p>Black Forest Cake features layers of rich chocolate cake, whipped cream, and sweet cherries. The combination of dark chocolate, creamy frosting, and fruity sweetness creates a deliciously indulgent dessert.</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
+
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/blog-img1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
+                        <p>Caramel Bourbon Vanilla Cupcakes are a delightful treat that combines rich, buttery caramel, smooth bourbon, and fragrant vanilla. The cupcakes have a light, moist texture, with a fluffy crumb that melts in your mouth. Topped with a creamy, smooth frosting made with caramel, butter, and a splash of bourbon, these cupcakes offer a perfect balance of sweetness and warmth. They’re ideal for special occasions like weddings, birthdays, or dinner parties, and pair beautifully with a glass of bourbon or a rich coffee, making them a sophisticated dessert choice for any celebration.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/blog-img2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Drip Cake</h3>
+                        <p>A Caramel Drip Cake is a visually stunning and indulgent dessert that combines rich layers of cake with a glossy caramel drip effect, creating an eye-catching and delicious masterpiece. Typically, the cake consists of moist layers of vanilla, chocolate, or even caramel-flavored sponge, generously filled with rich frosting. The highlight of the cake is the decadent caramel sauce, which is drizzled over the top, allowing it to cascade down the sides, creating a beautiful "drip" effect..</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="frontend/images/blog-img4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Chocolate Cake </h3>
+                        <p>A Chocolate Cake is a decadent and visually striking dessert that combines rich chocolate cake layers with smooth frosting and a glossy, dripping chocolate ganache. The layers of moist, dense chocolate cake are typically complemented by a silky buttercream or ganache filling, and the final touch is the irresistible chocolate drip that cascades down the sides, creating a luxurious and indulgent effect.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+    </section>
+
+    <!-- blogs section ends here  -->
+
+    <!-- newsletter section start here  -->
+
+    <section class="newsletter">
+        <form action="">
+            <h3>subscribe for latest update</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="button" value="subscribe" class="box2">
+        </form>
+    </section>
+    <!-- newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>client review</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The wedding cake from Sweet Delights Bakery was simply breathtaking! Each layer was moist and flavorful, and the design perfectly matched our theme. </p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Emily Johnson</h3>
+                            <p>Wedding Cake</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The chocolate pastries here are absolutely divine. They have the perfect balance of richness and sweetness, and the texture is melt-in-your-mouth. I keep coming back because they’re truly the best pastries I’ve ever had!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            
+                        </div>
+                        <div class="clientDetailed">
+                            <h3> Michael Lee</h3>
+                            <p>Chocolate Pastries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The custom cupcakes I ordered for my daughter’s birthday were an instant hit! They were decorated beautifully with intricate details, and the flavors were exceptional. Everyone at the party kept asking where they were from!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Sarah Patel</h3>
+                            <p>Custom Cupcakes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The fresh bread at Sweet Delights Bakery is unmatched. It’s soft, perfectly baked, and tastes amazing whether paired with butter or just on its own. You can tell it’s made with love and the highest quality ingredients!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>David Brown </h3>
+                            <p>Fresh Bread</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="frontend/images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Sweet Delights Bakery </h1>
+                </div>
+
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+            <div class="box">
+                <h3>Extra link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+971512345678</a>
+                <a href="#"> <i class="fas fa-envelope"></i>abcd@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            created by M.Irtaza 
+        </div>
+    </footer>
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="frontend/index.js"></script>
+
+
+</body>
+
+</html>
